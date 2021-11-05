@@ -5,7 +5,7 @@ function Result = edge_detect_algorithm(i)
     I_ft = fft2(I);
     I_ft2 = fftshift(I_ft);
     
-    result = real(ifft2(ifftshift(I_ft2)));
+    Result = real(ifft2(ifftshift(I_ft2)));
     
 %     hx = [1 2 1;0 0 0;-1 -2 -1];
 %     Sx = imfilter(I,hx,'replicate');
