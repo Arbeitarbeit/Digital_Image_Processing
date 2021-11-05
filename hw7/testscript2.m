@@ -5,6 +5,11 @@ subplot(2,2,1); imshow(i,[])
 I = rgb2gray(i);
 I = double(I);    
 
+n = 3;
+s = 0.5; %sigma
+h1 = fspecial('gaussian',[n n],s)
+A = imfilter(NI,h1);
+
 hx = [1 2 1;0 0 0;-1 -2 -1];
 Sx = imfilter(I,hx,'replicate');
 
