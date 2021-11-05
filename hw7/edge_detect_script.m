@@ -1,9 +1,9 @@
 close all;
 clear all;
 
-I1 = imread('resources\A.png');
-I2 = imread('resources\B.png');
-I3 = imread('resources\C.png');
+I1 = imread('resources/A.png');
+I2 = imread('resources/B.png');
+I3 = imread('resources/C.png');
 
 subplot(2,3,1); imshow(I1,[]); xlabel('A')
 subplot(2,3,2); imshow(I2,[]); xlabel('B')
