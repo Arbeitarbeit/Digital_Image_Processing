@@ -5,15 +5,6 @@ subplot(2,2,1); imshow(i,[])
 I = rgb2gray(i);
 I = double(I);    
 
-I_ft = fft2(I);
-I_ft2 = fftshift(I_ft);
-
-a = real(ifft2(ifftshift(I_ft2)));
-%     Result = zeros(size(a));
-%     Result(a > 120) = 255;
-%     Result(a <= 120) = 0;
-
-
 hx = [1 2 1;0 0 0;-1 -2 -1];
 Sx = imfilter(a,hx,'replicate');
 
